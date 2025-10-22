@@ -1,0 +1,25 @@
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+}
+
+apply plugin: 'com.android.library'
+apply plugin: 'org.jetbrains.kotlin.android'
+
+android {
+  namespace "com.trubkacontacts"
+  compileSdkVersion 34
+
+  defaultConfig {
+    minSdkVersion 23
+    targetSdkVersion 34
+  }
+}
+
+dependencies {
+  implementation 'com.facebook.react:react-native:+'
+  implementation "org.jetbrains.kotlin:kotlin-stdlib:1.8.22"
+  implementation 'com.googlecode.libphonenumber:libphonenumber:8.13.40'
+}
